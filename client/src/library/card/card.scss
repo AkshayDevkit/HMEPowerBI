@@ -1,0 +1,19 @@
+.card-container {
+    font-size: 1rem;
+    width: 100%;
+    .ant-card {
+        font-size: 1em;
+        width: 100%;
+        .ant-card-head {
+            font-size: 1.2em;
+            min-height: 1em;
+            padding: 0 1em;
+            .ant-card-head-title {
+                padding: 0.5em 0;
+            }
+        }
+        .ant-card-body {
+            padding: 1em;
+        }
+    }
+}

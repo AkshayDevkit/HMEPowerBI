@@ -1,0 +1,14 @@
+.report {
+    .actions {
+        float: right;
+        margin-bottom: 1em;
+    }
+    .sample-report {
+        height: 76.5vh;
+        iframe {
+            border: none;
+            background-color: #fff;
+            height: 108% !important;
+        }
+    }
+}

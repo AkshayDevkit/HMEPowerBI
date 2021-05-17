@@ -1,0 +1,59 @@
+@import './src/styles/_variables'; // '~styles/variables';
+
+.theme-white {
+    border: 0.1em solid $panel-border-color;
+    border-radius: 0.7rem;
+    background: #fff;
+
+    .section-header {
+        color: $panel-heading-text-color;
+        // border-bottom: 1px solid $primary-border-color;
+        // background-color: $panel-heading-background-color;
+        border-radius: 0.7rem 0.7rem 0rem 0rem;
+        padding: 7px 10px;
+        height: 40px;
+        padding: 0.4em 1em;
+        height: 2.6em;
+
+        .icon {
+            color: $panel-icon-text-color;
+        }
+    }
+    .section-footer {
+        // background-color: $panel-heading-background-color;
+        // border-radius: 0rem 0rem 0.7rem 0.7rem;
+    }
+}
+
+// .theme {
+//     &.blue .theme-white .section-header {
+//         color: $theme-blue-primary-color;
+//         .icon {
+//             color: $theme-blue-primary-color;
+//         }
+//     }
+//     &.red .theme-white .section-header {
+//         color: $theme-red-primary-color;
+//         .icon {
+//             color: $theme-blue-primary-color;
+//         }
+//     }
+//     &.green .theme-white .section-header {
+//         color: $theme-green-primary-color;
+//         .icon {
+//             color: $theme-blue-primary-color;
+//         }
+//     }
+//     &.purple .theme-white .section-header {
+//         color: $theme-purple-primary-color;
+//         .icon {
+//             color: $theme-blue-primary-color;
+//         }
+//     }
+//     &.yellow .theme-white .section-header {
+//         color: $theme-yellow-primary-color;
+//         .icon {
+//             color: $theme-blue-primary-color;
+//         }
+//     }
+// }

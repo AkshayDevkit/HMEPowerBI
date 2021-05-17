@@ -1,0 +1,30 @@
+@import '~styles/variables';
+
+.filter-table {
+    font-size: 1rem;
+
+    .filter-table-content {
+        font-size: 1.1em;
+
+        .filter-table-header {
+            background-color: $secondary-body-background-color;
+            padding: 0.5em;
+            border: 0.05em solid $panel-border-color;
+            border-radius: 0.7em;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: none;
+        }
+
+        .filter-table-body {
+            .table {
+                .ant-table-wrapper {
+                    &.bordered {
+                        border-top-left-radius: 0;
+                        border-top-right-radius: 0;
+                    }
+                }
+            }
+        }
+    }
+}

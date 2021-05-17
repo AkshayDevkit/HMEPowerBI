@@ -1,0 +1,39 @@
+@import '~styles/variables';
+
+.checkbox {
+    font-size: 1rem;
+
+    .label {
+        font-size: 1.2em;
+        padding: 0 0.5em;
+    }
+
+    .ant-checkbox-inner,
+    .ant-checkbox-inner:hover,
+    .ant-checkbox-inner:focus {
+        background-color: $checked-background-color;
+        border-color: $checked-color;
+        width: 1em;
+        height: 1em;
+
+        &::after {
+            border-color: $checked-background-color;
+            // width: 0.4em;
+            // height: 0.65em;
+        }
+    }
+
+    .ant-checkbox-checked {
+        .ant-checkbox-inner,
+        .ant-checkbox-inner:hover,
+        .ant-checkbox-inner:focus {
+            background-color: $checked-background-color;
+            border-color: $checked-border-color;
+            border-radius: 0.3em;
+
+            &::after {
+                border-color: $checked-color;
+            }
+        }
+    }
+}

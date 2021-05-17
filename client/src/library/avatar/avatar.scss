@@ -1,0 +1,16 @@
+.avatar {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+
+    .k-avatar {
+        width: 3em;
+        height: 3em;
+        margin: 0 !important;
+        display: inline-table !important
+    }
+
+    .k-avatar-image > * {
+        width: auto;
+    }
+}

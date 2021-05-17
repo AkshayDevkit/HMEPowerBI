@@ -1,0 +1,10 @@
+@import './src/styles/_variables'; // '~styles/variables';
+
+.section-footer {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    padding: 0.6em 1em;
+    border-top: 1px solid $primary-border-color;
+}

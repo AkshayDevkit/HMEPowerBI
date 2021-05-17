@@ -1,0 +1,22 @@
+.summary-container {
+    font-size: 1rem;
+    .summary {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        .widgets {
+            display: flex;
+            width: 100%;
+            .widget-container {
+                margin-left: 1em;
+                &:first-child {
+                    margin-left: 0;
+                }
+            }
+        }
+        .charts {
+            margin-top: 1em;
+        }
+    }
+}

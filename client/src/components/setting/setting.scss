@@ -1,0 +1,45 @@
+.setting {
+    font-size: 1rem;
+
+    .setting-section {
+        margin: 2em 1em;
+    }
+    .setting-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 2em;
+
+        .schema {
+            .checkbox {
+                margin: 0 2em;
+            }
+        }
+
+        .setting-field {
+            width: 50%;
+            margin: 2em 0;
+
+            &.no-label {
+                .form-label {
+                    min-width: auto;
+                }
+            }
+            .form-label {
+                min-width: 2em;
+            }
+
+            .card-container {
+                margin: 2em 1em;
+                width: 96%;
+            }
+            .checkbox {
+                align-self: center;
+            }
+            .no-label {
+                .form-label {
+                    min-height: auto;
+                }
+            }
+        }
+    }
+}

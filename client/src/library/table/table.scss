@@ -1,0 +1,77 @@
+@import '~styles/variables';
+
+.table {
+    font-size: 1rem;
+    background: #fff;
+    $rowPadding: 0.5em;
+
+    .bordered {
+        border: 0.1em solid $primary-border-color;
+    }
+
+    .table-form-fields {
+        .field {
+            width: 95%;
+            margin: 0;
+        }
+    }
+
+    .ant-table {
+        font-size: 1.3em;
+        .ant-table-body {
+            overflow-y: auto !important;
+        }
+        .ant-table-thead {
+            > tr {
+                > th {
+                    padding: $rowPadding;
+                    background-color: #f5f5f5;
+                    // $secondary-body-background-color; // #273143c7;
+                    font-weight: 500;
+                }
+            }
+
+            .ant-table-column-sorters {
+                padding: 0;
+            }
+        }
+        .ant-table-tbody {
+            > tr {
+                > td {
+                    padding: $rowPadding;
+                    vertical-align: top;
+                }
+            }
+        }
+        .ant-table {
+            tfoot {
+                > tr {
+                    > th {
+                        padding: $rowPadding;
+                    }
+                    > td {
+                        padding: $rowPadding;
+                    }
+                }
+            }
+        }
+        .ant-spin-nested-loading {
+            .ant-table-container {
+                padding-left: 2em;
+            }
+        }
+    }
+}
+
+.theme {
+    &.blue {
+        .table .ant-table .ant-table-thead > tr > th {
+            // background-color: $theme-blue-primary-color;
+            // color: #fff;
+            // font-weight: 400;
+        }
+    }
+}
+.ant-empty-normal {
+    margin: 0;
+}

@@ -1,0 +1,37 @@
+@import '~styles/variables';
+
+.side-nav {
+    min-height: 92.7vh;
+    height: 100%;
+    background-color: #273143;
+    margin-top: -1px;
+    .ant-menu {
+        background-color: #273143;
+        border-color: #273143;
+        li {
+            font-size: 1.2em;
+            display: flex;
+            flex-direction: column;
+            margin: 0 !important;
+            height: auto;
+            padding: 2rem 0 2rem 0;
+            line-height: 1em;
+
+            &:hover {
+                background-color: #394253;
+            }
+
+            .anticon {
+                font-size: 1.5rem;
+                margin-left: 0.5em;
+            }
+            a {
+                font-size: 1.1rem;
+                display: block;
+                text-align: center;
+                white-space: pre-wrap;
+                margin-top: 0.2em;
+            }
+        }
+    }
+}

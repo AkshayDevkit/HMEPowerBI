@@ -1,0 +1,20 @@
+.side-floater {
+    font-size: 1rem;
+    border-radius: 0rem 0.7rem 0.7rem 0rem;
+    width: 3.5em;
+    height: 88vh;
+    z-index: 100;
+    background: #fff;
+    margin-left: -1em;
+    .section-header {
+        background: transparent;
+        border-bottom: none;
+    }
+    .section-body {
+        font-size: 1.4em;
+        font-weight: 600;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        width: 2em;
+    }
+}

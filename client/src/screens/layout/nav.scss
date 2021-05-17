@@ -1,0 +1,43 @@
+@import '~styles/variables';
+
+.nav {
+    &.blue {
+        .ant-menu {
+            background-image: $theme-blue-background;
+        }
+    }
+    &.red {
+        .ant-menu {
+            background-image: $theme-red-background;
+        }
+    }
+    &.green {
+        .ant-menu {
+            background-image: $theme-green-background;
+        }
+    }
+    &.purple {
+        .ant-menu {
+            background-image: $theme-purple-background;
+        }
+    }
+    &.yellow {
+        .ant-menu {
+            background-image: $theme-yellow-background;
+        }
+    }
+    .ant-menu-submenu,
+    .ant-menu {
+        color: #fff !important;
+        // background-image: url('top-nav-bg.png');
+        .ant-menu-submenu-title,
+        .ant-menu-item {
+            a,
+            &:hover {
+                color: #fff !important;
+                border-color: #fff !important;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,201 @@
+@import '~styles/variables';
+
+.btn-container {
+    font-size: 1rem;
+    .btn,
+    .ant-btn,
+    .ant-btn[disabled] {
+        font-size: 1.2em;
+        height: 2.3em;
+        line-height: 0;
+        min-width: 5em;
+        border-radius: 1.4em;
+        border: none;
+        outline: none;
+        font-weight: 600;
+        color: $button-default-color;
+        padding: 0 1em;
+        cursor: pointer;
+        background-color: $button-default-background-color;
+
+        &:hover,
+        &:focus {
+            color: $button-default-color;
+            background-color: transparent;
+            border: none;
+        }
+
+        &:focus {
+            box-shadow: 0.14em 0.14em 0.14em rgba(0, 0, 0, 0.1);
+        }
+
+        &.ant-btn-primary,
+        &.primary {
+            color: $button-default-color;
+            background-color: $button-primary-background-color;
+
+            &:hover:not([disabled]) {
+                background-color: $button-primary-hover-background-color;
+                cursor: pointer;
+            }
+
+            &:focus {
+                background-color: $button-primary-focus-background-color;
+            }
+        }
+
+        &.secondary {
+            color: $button-default-color;
+            background-color: $button-secondary-background-color;
+
+            &:hover:not([disabled]) {
+                background-color: $button-secondary-hover-background-color;
+                cursor: pointer;
+            }
+
+            &:focus {
+                background-color: $button-secondary-focus-background-color;
+            }
+        }
+
+        &.tertiary {
+            height: 1.7em;
+            // line-height: 1.8em;
+            background-color: $button-default-color;
+            border: 0.1em solid $button-tertiary-border-color;
+            color: $button-tertiary-color;
+
+            &:hover:not([disabled]) {
+                background-color: $button-tertiary-color;
+                color: $button-default-color;
+                cursor: pointer;
+            }
+
+            &:focus {
+                background-color: $button-tertiary-color;
+                color: $button-default-color;
+            }
+
+            &:disabled {
+                color: $button-tertiary-color;
+                border: 0.1em solid #b3cbe7;
+            }
+        }
+
+        &.quaternary {
+            background-color: $button-quaternary-background-color;
+            color: $button-quaternary-color;
+            border: 0.1em solid $button-quaternary-border-color;
+            border-radius: 0.4em;
+            height: 1.7em;
+            line-height: 1.7em;
+            min-width: auto;
+            width: auto;
+            padding: 0em 0.6em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &:hover:not([disabled]) {
+                box-shadow: 0px 0px 0.4em $button-quaternary-color;
+            }
+
+            &:focus {
+                box-shadow: 0px 0px 0.4em $button-quaternary-color;
+            }
+
+            &.ant-btn-dangerous {
+                color: #e34850;
+                border-color: #e34850;
+
+                &:hover:not([disabled]) {
+                    box-shadow: 0px 0px 0.3em $button-quaternary-danger-color;
+                }
+
+                &:focus {
+                    box-shadow: 0px 0px 0.3em $button-quaternary-danger-color !important;
+                }
+            }
+        }
+
+        &:disabled {
+            opacity: 0.3;
+            color: $button-default-disabled-color;
+        }
+
+        .btn-icon {
+            padding: 0 0 0 1em;
+
+            &.start {
+                padding: 0 0.5em 0 0;
+            }
+
+            &.end {
+                padding: 0 0 0 0.5em;
+            }
+        }
+    }
+
+    .btn:disabled,
+    .ant-btn:disabled,
+    .ant-btn[disabled]:disabled {
+        opacity: 0.3;
+        color: $button-default-color;
+    }
+
+    &.blue {
+        .ant-btn.primary {
+            background-color: $theme-blue-primary-color;
+            &:hover:not([disabled]) {
+                background-color: $theme-blue-secondary-color;
+            }
+            &:focus {
+                background-color: $theme-blue-secondary-color;
+            }
+        }
+    }
+    &.red {
+        .ant-btn.primary {
+            background-color: $theme-red-primary-color;
+            &:hover:not([disabled]) {
+                background-color: $theme-red-secondary-color;
+            }
+            &:focus {
+                background-color: $theme-red-secondary-color;
+            }
+        }
+    }
+    &.green {
+        .ant-btn.primary {
+            background-color: $theme-green-primary-color;
+            &:hover:not([disabled]) {
+                background-color: $theme-green-secondary-color;
+            }
+            &:focus {
+                background-color: $theme-green-secondary-color;
+            }
+        }
+    }
+    &.purple {
+        .ant-btn.primary {
+            background-color: $theme-purple-primary-color;
+            &:hover:not([disabled]) {
+                background-color: $theme-purple-secondary-color;
+            }
+            &:focus {
+                background-color: $theme-purple-secondary-color;
+            }
+        }
+    }
+    &.yellow {
+        .ant-btn.primary {
+            background-color: $theme-yellow-primary-color;
+            &:hover:not([disabled]) {
+                background-color: $theme-yellow-secondary-color;
+            }
+            &:focus {
+                background-color: $theme-yellow-secondary-color;
+            }
+        }
+    }
+}

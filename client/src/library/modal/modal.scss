@@ -1,0 +1,224 @@
+@import '~styles/variables';
+
+.ant-modal {
+    font-size: 1rem;
+    max-width: 80%;
+
+    &.small {
+        max-width: 40%;
+    }
+
+    &.medium {
+        max-width: 60%;
+    }
+
+    &.large {
+        max-width: 80%;
+    }
+
+    &.full {
+        max-width: 95%;
+    }
+    .ant-modal-content .ant-table-content {
+        // NS: TODO Recheck why we needed this
+        // This was causing each and evry table scroll
+        // and in IE it was also height issues
+        // overflow: auto;
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .ant-modal-content {
+        border-radius: 0.6em;
+        .ant-modal-close {
+            .ant-modal-close-x {
+                color: #404040;
+            }
+        }
+
+        .ant-modal-header {
+            padding: 1.156em 1.5em;
+            border-top-left-radius: 0.6em;
+            border-top-right-radius: 0.6em;
+            border-color: $primary-border-color;
+            border: none;
+
+            .ant-modal-title {
+                color: #404040;
+                svg {
+                    width: 1em !important;
+                    height: 1.17em;
+                    margin-right: 0.2em;
+                }
+            }
+        }
+        .ant-modal-body {
+            padding: 1em;
+            font-size: 1.2em;
+            background-color: $modal-background-color;
+            max-height: 75vh;
+            overflow: auto;
+            .ant-modal-confirm-btns {
+                .ant-btn {
+                    color: $modal-color;
+                    &.ant-btn-primary {
+                        color: $modal-background-color;
+                    }
+                }
+            }
+        }
+        .ant-modal-footer {
+            border-color: $primary-border-color;
+            padding: 0.8em 1.3em;
+
+            span + span {
+                margin-left: 0.5em;
+            }
+        }
+    }
+
+    &.ant-modal-confirm {
+        &.ant-modal-confirm-confirm,
+        &.ant-modal-confirm-error,
+        &.ant-modal-confirm-info,
+        &.ant-modal-confirm-warning,
+        &.ant-modal-confirm-success {
+            width: 27% !important;
+
+            .ant-modal-content {
+                overflow: hidden;
+                .ant-modal-close {
+                    display: block;
+                    color: $color-404040;
+                }
+                .ant-modal-body {
+                    padding: 2em;
+                    background-color: $secondary-body-background-color;
+                    .ant-modal-confirm-title {
+                        margin: 1.2em 0 0;
+                        width: 100%;
+                    }
+
+                    .ant-modal-confirm-body {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .anticon {
+                            font-size: 4em;
+                            margin: 0.2em;
+                        }
+                        .ant-modal-confirm-content {
+                            font-size: 1.25em;
+                            font-weight: 600;
+                            margin: 1.2em 0 0;
+                            text-align: center;
+                            width: 100%;
+                        }
+                    }
+
+                    .ant-modal-confirm-btns {
+                        float: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        margin: 3em 0 0;
+
+                        .ant-btn {
+                            &.secondary {
+                                // color: $color-ffffff;
+
+                                &:hover {
+                                    // background-color: $color-949494;
+                                }
+                            }
+                        }
+
+                        svg {
+                            margin-right: 0.5em;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.ant-modal-confirm-success {
+            .ant-modal-content {
+                .ant-modal-body {
+                    .ant-modal-confirm-body {
+                        .anticon {
+                            color: #49a896;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.ant-modal-confirm-confirm {
+            .ant-modal-content {
+                .ant-modal-body {
+                    .ant-modal-confirm-body {
+                        .anticon {
+                            color: #d5c322;
+                            font-size: 3.2em;
+                        }
+                    }
+
+                    .ant-modal-confirm-btns {
+                        flex-direction: row-reverse;
+                        button + button {
+                            margin: 0 0.8em 0 0;
+                        }
+                    }
+                }
+            }
+
+            &.confirm-message {
+                width: 35% !important;
+                .ant-modal-content {
+                    border: 0.06em solid $panel-border-color;
+                    .ant-modal-close {
+                        margin: -0.3em;
+                    }
+                    .ant-modal-body {
+                        padding: 0;
+                        .ant-modal-confirm-body {
+                            align-items: flex-start;
+                            .anticon {
+                                font-size: 2.6em;
+                                position: absolute;
+                                top: 1.85em;
+                                left: 0.5em;
+                            }
+                            .ant-modal-confirm-title {
+                                background-color: #f9f6dc;
+                                width: 100%;
+                                padding: 0.5em 1em;
+                                margin: 0;
+                                border-bottom: 0.06em solid $panel-border-color;
+                            }
+                            .ant-modal-confirm-content {
+                                font-size: 1.1em;
+                                background-color: #fffffb;
+                                text-align: start;
+                                padding: 1em 6em 1em 6em;
+                                margin: 0;
+                            }
+                        }
+                        .ant-modal-confirm-btns {
+                            padding: 1em;
+                            margin: 0;
+                            flex-direction: row;
+                            justify-content: flex-end;
+                            button + button {
+                                margin: 0 0 0 0.8em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

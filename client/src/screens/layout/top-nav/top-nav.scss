@@ -1,0 +1,92 @@
+@import '~styles/variables';
+
+.top-nav {
+    width: 100%;
+    .top-nav-container {
+        .banner {
+            background-image: url(./banner/4.png);
+
+            span {
+                cursor: pointer;
+            }
+            .ant-menu {
+                background: transparent;
+            }
+        }
+    }
+}
+
+.theme {
+    &.blue .top-nav-container {
+        background: $theme-blue-primary-color;
+        .ant-menu {
+            background: $theme-blue-transparent-background;
+        }
+    }
+    &.red .top-nav-container {
+        background: $theme-red-primary-color;
+        .ant-menu {
+            background: $theme-red-transparent-background;
+        }
+    }
+    &.green .top-nav-container {
+        background: $theme-green-primary-color;
+        .ant-menu {
+            background: $theme-green-transparent-background;
+        }
+    }
+    &.purple .top-nav-container {
+        background: $theme-purple-primary-color;
+        .ant-menu {
+            background: $theme-purple-transparent-background;
+        }
+    }
+    &.yellow .top-nav-container {
+        background: $theme-yellow-primary-color;
+        .ant-menu {
+            background: $theme-yellow-transparent-background;
+        }
+    }
+}
+
+.theme-selection {
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 0.1em;
+    display: inline-block;
+    margin: 0.2em;
+    cursor: default;
+    span {
+        cursor: pointer;
+    }
+    &.blue {
+        background: $theme-blue-primary-color;
+    }
+    &.red {
+        background: $theme-red-primary-color;
+    }
+    &.green {
+        background: $theme-green-primary-color;
+    }
+    &.purple {
+        background: $theme-purple-primary-color;
+    }
+    &.yellow {
+        background: $theme-yellow-primary-color;
+    }
+}
+
+.ant-menu-submenu-popup {
+    .ant-menu {
+        background-color: #273143;
+        color: #fff;
+        .ant-menu-item {
+            a,
+            &:hover {
+                background-color: #394253;
+                color: #fff !important;
+                border-color: #fff !important;
+            }
+        }
+    }
+}

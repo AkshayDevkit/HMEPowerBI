@@ -1,0 +1,34 @@
+@import '~styles/variables';
+
+.modal-iframe {
+    width: auto !important;
+    max-width: 90% !important;
+
+    .ant-modal-content {
+        overflow: hidden;
+
+        .ant-modal-close {
+            display: block !important;
+        }
+    }
+
+    .ant-modal-body {
+        padding: 0 !important;
+        background-color: $secondary-body-background-color !important;
+
+        .anticon-info-circle,
+        .ant-modal-confirm-btns {
+            display: none;
+        }
+
+        .ant-modal-confirm-content {
+            margin: 0 !important;
+            padding-top: 3em;
+
+            .iframe {
+                width: 100%;
+                border: none;
+            }
+        }
+    }
+}

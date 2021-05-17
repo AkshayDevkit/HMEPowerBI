@@ -1,0 +1,35 @@
+@import '~styles/variables';
+
+.section-header {
+    font-size: 1.25em;
+
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    color: $panel-heading-text-color;
+    position: relative;
+
+    &.padding {
+        padding: 0 0 1em 0.5em;
+    }
+
+    .title {
+        font-size: 1.2em;
+        font-weight: 600;
+        float: left;
+
+        .icon {
+            color: $panel-icon-text-color;
+
+            &.start {
+                padding: 0 0.5em 0 0;
+            }
+
+            &.end {
+                padding: 0 0 0 0.5em;
+            }
+        }
+    }
+}

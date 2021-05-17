@@ -1,0 +1,34 @@
+.user-register {
+    width: 100%;
+    height: 100vh;
+    .form {
+        width: 50%;
+    }
+}
+.theme {
+    &.blue {
+        .user-register {
+            background: $theme-blue-background;
+        }
+    }
+    &.red {
+        .user-register {
+            background: $theme-red-background;
+        }
+    }
+    &.green {
+        .user-register {
+            background: $theme-green-background;
+        }
+    }
+    &.purple {
+        .user-register {
+            background: $theme-purple-background;
+        }
+    }
+    &.yellow {
+        .user-register {
+            background: $theme-yellow-background;
+        }
+    }
+}
